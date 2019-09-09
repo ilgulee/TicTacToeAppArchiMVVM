@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/game_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".screen.game.GameFragment">
+
+        <TableLayout android:id="@+id/table_layout"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintBottom_toBottomOf="parent"
+                     app:layout_constraintLeft_toLeftOf="parent"
+                     app:layout_constraintRight_toRightOf="parent"
+                     app:layout_constraintTop_toTopOf="parent"
+                     android:gravity="center">
+
+            <TableRow android:id="@+id/row0"
+                      style="@style/TableRow">
+                <TextView
+                        style="@style/Cell.Left"
+                        android:layout_marginTop="0dp"/>
+                <TextView
+                        style="@style/Cell.Middle"
+                        android:layout_marginTop="0dp"/>
+                <TextView
+                        style="@style/Cell.Right"
+                        android:layout_marginTop="0dp"/>
+            </TableRow>
+
+            <TableRow android:id="@+id/row1"
+                      style="@style/TableRow">
+                <TextView
+                        style="@style/Cell.Left"/>
+                <TextView
+                        style="@style/Cell.Middle"/>
+                <TextView
+                        style="@style/Cell.Right"/>
+            </TableRow>
+
+            <TableRow android:id="@+id/row2"
+                      style="@style/TableRow">
+                <TextView
+                        style="@style/Cell.Left"
+                        android:layout_marginBottom="0dp"/>
+                <TextView
+                        style="@style/Cell.Middle"
+                        android:layout_marginBottom="0dp"/>
+                <TextView
+                        style="@style/Cell.Right"
+                        android:layout_marginBottom="0dp"/>
+            </TableRow>
+        </TableLayout>
+        <!--<Button-->
+                <!--android:id="@+id/giveup_game_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="32dp"-->
+                <!--android:text="@string/giveup_button"-->
+                <!--android:theme="@style/GoButton"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintStart_toStartOf="parent"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
